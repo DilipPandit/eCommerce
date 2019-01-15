@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ecommerce.customViews.CustomDrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/customDraerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.ecommerce.customViews.CustomActionBar
+            android:id="@+id/customActionBar"
+            android:layout_width="match_parent"
+            android:layout_height="56dp">
+
+        </com.ecommerce.customViews.CustomActionBar>
+
+        <FrameLayout
+            android:id="@+id/containerBase"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/customActionBar"></FrameLayout>
+    </RelativeLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="256dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+
+        android:orientation="vertical">
+
+
+        <android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/rvCustomList"
+            android:layout_width="256dp"
+            android:background="@android:color/white"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+</com.ecommerce.customViews.CustomDrawerLayout>
